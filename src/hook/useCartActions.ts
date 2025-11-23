@@ -1,9 +1,24 @@
+import { MenuItem } from "src/interface";
 import { CartItem } from "src/redux/interface/redux";
 import { cartActions } from "src/redux/reducers/cart";
 import { useAppDispatch, useAppSelector } from "./useReduxHooks";
 
 export const useCartItems = () => {
   return useAppSelector((state) => state.cart.items);
+};
+
+export const useAddToCart = () => {
+  const dispatch = useAppDispatch();
+
+  return (item: MenuItem) => {
+    dispatch(cartActions.addItem(item));
+  };
+};
+
+export const useCartItemAlreadyExist = (item: MenuItem) => {
+  return useAppSelector((state) =>
+    state.cart.items.find((cartItem) => cartItem.item.id === item.id)
+  );
 };
 
 export const useCartItemsTotalCount = () => {

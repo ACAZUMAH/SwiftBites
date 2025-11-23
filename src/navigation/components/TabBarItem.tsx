@@ -10,6 +10,7 @@ import {
 } from "react-native";
 import { Conditional } from "src/components/conditional";
 import { appRoutes } from "src/constants";
+import { useCartItemsTotalCount } from "src/hook/useCartActions";
 interface TabBarItemProps {
   icon: ImageSourcePropType;
   label: string;
@@ -23,6 +24,7 @@ export const TabBarItem: React.FC<TabBarItemProps> = ({
   route,
   onPress,
 }) => {
+  const count = useCartItemsTotalCount();
   const currentRouteName = useNavigationState((state) => {
     const findCurrentRoute = (route: any): string => {
       if (!route?.state) return route.name;
@@ -52,9 +54,11 @@ export const TabBarItem: React.FC<TabBarItemProps> = ({
         {label}
       </Text>
       <Conditional condition={route === appRoutes.CART}>
-        <View className="tab-cart__badge">
-          <Text className="paragraph-bold text-white">0</Text>
-        </View>
+        <Conditional condition={count > 0}>
+          <View className="tab-cart__badge">
+            <Text className="paragraph-bold text-white">{count}</Text>
+          </View>
+        </Conditional>
       </Conditional>
     </TouchableOpacity>
   );

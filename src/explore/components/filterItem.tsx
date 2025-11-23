@@ -23,7 +23,11 @@ export const FilterItem: React.FC<FilterItemProps> = ({
       }
     >
       <Text
-        className={cn("body-medium", active ? "text-white" : "text-gray-200")}
+        className={cn(
+          "body-medium",
+          "h-5",
+          active ? "text-white" : "text-gray-200"
+        )}
       >
         {name}
       </Text>

@@ -1,7 +1,7 @@
 import { useFonts } from "expo-font";
 import * as splashScreen from "expo-splash-screen";
 import React, { useEffect } from "react";
-import { Navigation } from "src/navigations";
+import { Navigation } from "src/navigation";
 import "./global.css";
 
 const App = () => {

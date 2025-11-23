@@ -8,8 +8,6 @@ export interface CartItem {
 
 export interface Cart {
   items: CartItem[];
-  totalQuantity: number;
-  totalPrice: number;
 }
 
 export interface CartActions extends PayloadAction<Partial<CartItem>> {}

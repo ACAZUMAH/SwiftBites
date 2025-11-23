@@ -34,6 +34,7 @@ export const dummyData = {
 
   menu: [
     {
+      id: "9b1deb4d-3b7d-4bad-9bdd-2b0d7b3dcb6d",
       name: "Classic Cheeseburger",
       description: "Beef patty, cheese, lettuce, tomato",
       image_url:
@@ -46,6 +47,7 @@ export const dummyData = {
       customizations: ["Extra Cheese", "Coke", "Fries", "Onions", "Bacon"],
     },
     {
+      id: "1b9d6bcd-bbfd-4b2d-9b5d-ab8dfbbd4bed",
       name: "Pepperoni Pizza",
       description: "Loaded with cheese and pepperoni slices",
       image_url:
@@ -64,6 +66,7 @@ export const dummyData = {
       ],
     },
     {
+      id: "6ec0bd7f-11c0-43da-975e-2a8ad9ebae0b",
       name: "Bean Burrito",
       description: "Stuffed with beans, rice, salsa",
       image_url:
@@ -76,6 +79,7 @@ export const dummyData = {
       customizations: ["Jalapeños", "Iced Tea", "Fries", "Salad"],
     },
     {
+      id: "5c401ba0-872b-429a-9302-c5a31a320b06",
       name: "BBQ Bacon Burger",
       description: "Smoky BBQ sauce, crispy bacon, cheddar",
       image_url:
@@ -88,6 +92,7 @@ export const dummyData = {
       customizations: ["Onions", "Fries", "Coke", "Bacon", "Avocado"],
     },
     {
+      id: "7a08590a-5253-4461-b09f-4451c6096987",
       name: "Chicken Caesar Wrap",
       description: "Grilled chicken, lettuce, Caesar dressing",
       image_url:
@@ -100,6 +105,7 @@ export const dummyData = {
       customizations: ["Extra Cheese", "Coke", "Potato Wedges", "Tomatoes"],
     },
     {
+      id: "34f7f8e0-273b-4522-96a0-9041f22192b3",
       name: "Grilled Veggie Sandwich",
       description: "Roasted veggies, pesto, cheese",
       image_url:
@@ -112,6 +118,7 @@ export const dummyData = {
       customizations: ["Mushrooms", "Olives", "Mozzarella Sticks", "Iced Tea"],
     },
     {
+      id: "8c6a5404-1342-4c8f-8601-0c58968e23f7",
       name: "Double Patty Burger",
       description: "Two juicy beef patties and cheese",
       image_url:
@@ -130,6 +137,7 @@ export const dummyData = {
       ],
     },
     {
+      id: "e2895a9b-0134-4248-a980-28b884629308",
       name: "Paneer Tikka Wrap",
       description: "Spicy paneer, mint chutney, veggies",
       image_url:
@@ -142,6 +150,7 @@ export const dummyData = {
       customizations: ["Jalapeños", "Tomatoes", "Salad", "Fries", "Iced Tea"],
     },
     {
+      id: "4f6d3a1b-8e2c-4f5d-9a7b-1c3e5f7a9b0d",
       name: "Mexican Burrito Bowl",
       description: "Rice, beans, corn, guac, salsa",
       image_url:
@@ -154,6 +163,7 @@ export const dummyData = {
       customizations: ["Avocado", "Sweet Corn", "Salad", "Iced Tea"],
     },
     {
+      id: "a1b2c3d4-e5f6-4a7b-8c9d-0e1f2a3b4c5d",
       name: "Spicy Chicken Sandwich",
       description: "Crispy chicken, spicy sauce, pickles",
       image_url:
@@ -172,6 +182,7 @@ export const dummyData = {
       ],
     },
     {
+      id: "b2c3d4e5-f6a7-4b8c-9d0e-1f2a3b4c5d6e",
       name: "Classic Margherita Pizza",
       description: "Tomato, mozzarella, fresh basil",
       image_url:
@@ -184,6 +195,7 @@ export const dummyData = {
       customizations: ["Extra Cheese", "Olives", "Coke", "Garlic Bread"],
     },
     {
+      id: "c3d4e5f6-a7b8-4c9d-0e1f-2a3b4c5d6e7f",
       name: "Protein Power Bowl",
       description: "Grilled chicken, quinoa, veggies",
       image_url:
@@ -196,6 +208,7 @@ export const dummyData = {
       customizations: ["Avocado", "Salad", "Sweet Corn", "Iced Tea"],
     },
     {
+      id: "d4e5f6a7-b8c9-4d0e-1f2a-3b4c5d6e7f8a",
       name: "Paneer Burrito",
       description: "Paneer cubes, spicy masala, rice, beans",
       image_url:
@@ -208,6 +221,7 @@ export const dummyData = {
       customizations: ["Jalapeños", "Fries", "Garlic Bread", "Coke"],
     },
     {
+      id: "e5f6a7b8-c9d0-e1f2-a3b4-c5d6e7f8a9b0",
       name: "Chicken Club Sandwich",
       description: "Grilled chicken, lettuce, cheese, tomato",
       image_url:

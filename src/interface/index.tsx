@@ -10,6 +10,7 @@ export interface Customization {
 }
 
 export interface MenuItem {
+  id: string;
   name: string;
   description: string;
   image_url: string;

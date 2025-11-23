@@ -153,7 +153,7 @@ export const offers = [
     id: 2,
     title: "BURGER BASH",
     image: burgerTwo,
-    color: "#DF5A0C",
+    color: "#EB920C",
   },
   {
     id: 3,
@@ -165,6 +165,7 @@ export const offers = [
     id: 4,
     title: "BURRITO DELIGHT",
     image: buritto,
-    color: "#EB920C",
+
+    color: "#DF5A0C",
   },
 ];

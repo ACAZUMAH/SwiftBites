@@ -2,6 +2,7 @@ import { useFonts } from "expo-font";
 import * as splashScreen from "expo-splash-screen";
 import React, { useEffect } from "react";
 import { Navigation } from "src/navigation";
+import { ReduxProvider } from "src/redux/ReduxProvider";
 import "./global.css";
 
 const App = () => {
@@ -22,9 +23,9 @@ const App = () => {
   if (!fontsLoaded) return null;
 
   return (
-    <>
+    <ReduxProvider>
       <Navigation />
-    </>
+    </ReduxProvider>
   );
 };
 

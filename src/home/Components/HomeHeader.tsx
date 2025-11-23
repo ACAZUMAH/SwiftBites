@@ -4,7 +4,7 @@ import { icons } from "src/constants";
 
 export const HomeHeader = () => {
   return (
-    <View className="flex-between flex-row w-full mt-2">
+    <View className="flex-between flex-row w-full my-2">
       <View className="flex-start">
         <Text className="small-bold text-primary">DELIVER TO</Text>
         <TouchableOpacity className="flex-center flex-row gap-x-1">

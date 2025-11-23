@@ -6,7 +6,10 @@ import {
   ImageSourcePropType,
   Text,
   TouchableOpacity,
+  View,
 } from "react-native";
+import { Conditional } from "src/components/conditional";
+import { appRoutes } from "src/constants";
 interface TabBarItemProps {
   icon: ImageSourcePropType;
   label: string;
@@ -48,6 +51,11 @@ export const TabBarItem: React.FC<TabBarItemProps> = ({
       >
         {label}
       </Text>
+      <Conditional condition={route === appRoutes.CART}>
+        <View className="tab-cart__badge">
+          <Text className="paragraph-bold text-white">0</Text>
+        </View>
+      </Conditional>
     </TouchableOpacity>
   );
 };

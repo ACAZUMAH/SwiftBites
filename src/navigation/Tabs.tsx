@@ -16,6 +16,7 @@ export const TabNavigator: React.FC = () => {
         headerShown: false,
         tabBarShowLabel: false,
       }}
+      backBehavior="history"
     >
       <BottomTabs.Screen name={appRoutes.HOME} component={Home} />
       <BottomTabs.Screen name={appRoutes.SEARCH} component={Explore} />

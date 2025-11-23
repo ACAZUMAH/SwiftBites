@@ -12,5 +12,10 @@ export const useAppNavigationWithRef = () => {
     return navigationRef.dispatch(TabActions.jumpTo(name, params));
   };
 
-  return { navigationWithRef, navigateToTab };
+  const navigateBack = () => {
+    if (!navigationRef.isReady()) return;
+    return navigationRef.goBack();
+  };
+
+  return { navigationWithRef, navigateToTab, navigateBack };
 };

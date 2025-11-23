@@ -1,11 +1,11 @@
 import React from "react";
 import { View } from "react-native";
 import { appRoutes, icons } from "src/constants";
-import { useAppNavigation } from "src/hook/useAppNavigation";
+import { useAppNavigationWithRef } from "src/hook/useAppNavigationWithRef";
 import { TabBarItem } from "./TabBarItem";
 
 export const TabBarContents = () => {
-  const { navigateToTab } = useAppNavigation();
+  const { navigateToTab } = useAppNavigationWithRef();
   return (
     <View
       className="absolute rounded-full bg-white left-3 right-3 bottom-9 h-24 

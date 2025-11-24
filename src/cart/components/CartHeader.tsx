@@ -4,9 +4,9 @@ import { icons } from "src/constants";
 
 export const CartHeader = () => {
   return (
-    <View className="flex-between flex-row w-full my-2">
+    <View className="flex-between flex-row w-full mb-6">
       <View className="flex-start">
-        <Text className="small-bold text-primary">DELIVER TO</Text>
+        <Text className="small-bold text-primary">DELIVERY LOCATION</Text>
         <TouchableOpacity className="flex-center flex-row gap-x-1">
           <Text className="paragraph-bold text-dark-100">Kumasi, Ghana</Text>
           <Image
@@ -15,14 +15,13 @@ export const CartHeader = () => {
             resizeMode="contain"
           />
         </TouchableOpacity>
-
-        <TouchableOpacity
-          className="bg-primary/10 rounded-full p-3 mt-6 w-full 
-         flex items-center justify-center border-primary border"
-        >
-          <TouchableOpacity></TouchableOpacity>
-        </TouchableOpacity>
       </View>
+      <TouchableOpacity
+        className="bg-primary/10 rounded-full p-3 px-5
+         flex items-center justify-center border-primary border"
+      >
+        <Text className="base-semibold text-primary">Change Location</Text>
+      </TouchableOpacity>
     </View>
   );
 };

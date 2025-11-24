@@ -55,6 +55,14 @@ export const useDecreaseQuantity = () => {
   };
 };
 
+export const useRemoveItem = () => {
+  const dispatch = useAppDispatch();
+
+  return (id: string) => {
+    dispatch(cartActions.removeItem(id));
+  };
+};
+
 export const useClearCart = () => {
   const dispatch = useAppDispatch();
 

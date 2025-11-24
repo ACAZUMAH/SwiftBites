@@ -37,7 +37,11 @@ const slice = createSlice({
       const id = action.payload;
       const item = state.items.find((i) => i.item.id === id);
       if (item) {
-        item.quantity -= 1;
+        if (item.quantity === 1) {
+          state.items = state.items.filter((item) => item.item.id !== id);
+        } else {
+          item.quantity -= 1;
+        }
       }
     },
 

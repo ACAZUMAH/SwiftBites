@@ -1,8 +1,9 @@
 import React from "react";
-import { FlatList, Text } from "react-native";
+import { FlatList, Text, TouchableOpacity, View } from "react-native";
 import { CartItem } from "src/redux/interface/redux";
 import { CartHeader } from "./CartHeader";
 import { CartListItem } from "./CartListItem";
+import { PaymentSummary } from "./PaymentSummary";
 
 interface CarListProps {
   items: CartItem[];
@@ -21,6 +22,17 @@ export const CartList: React.FC<CarListProps> = ({ items }) => {
         keyExtractor={(item) => item.item.id.toString()}
         ListHeaderComponent={<CartHeader />}
         contentContainerClassName="pb-28 px-1"
+        ListFooterComponent={
+          <View className="gap-4">
+            <PaymentSummary />
+
+            <TouchableOpacity className="custom-btn">
+              <Text className="text-white-100 paragraph-semibold p-1">
+                Proceed to Checkout
+              </Text>
+            </TouchableOpacity>
+          </View>
+        }
       />
     </>
   );

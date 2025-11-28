@@ -32,11 +32,11 @@ export const useCartTotals = () => {
     (total, item) => total + item.item.price * item.quantity,
     0
   );
-  const tax = subTotal * 0.1;
+  // const tax = subTotal * 0.1;
   const deliveryFee = 0;
-  const total = subTotal + tax + deliveryFee;
+  const total = subTotal + deliveryFee;
 
-  return { subTotal, tax, deliveryFee, total, totalCount };
+  return { subTotal, deliveryFee, total, totalCount };
 };
 
 export const useIncreaseQuantity = () => {

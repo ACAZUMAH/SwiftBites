@@ -22,7 +22,7 @@ const slice = createSlice({
 
     removeItem: (state: Cart, action: PayloadAction<string>) => {
       const id = action.payload;
-      state.items.filter((i) => i.item.id !== id);
+      state.items = state.items.filter((i) => i.item.id !== id);
     },
 
     increaseQuantity: (state: Cart, action: PayloadAction<string>) => {

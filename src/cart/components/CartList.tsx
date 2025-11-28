@@ -23,7 +23,7 @@ export const CartList: React.FC<CarListProps> = ({ items }) => {
         ListHeaderComponent={<CartHeader />}
         contentContainerClassName="pb-28 px-1"
         ListFooterComponent={
-          <View className="gap-4">
+          <View className="gap-6">
             <PaymentSummary />
 
             <TouchableOpacity className="custom-btn">

@@ -4,7 +4,7 @@ import { icons } from "src/constants";
 
 export const CartHeader = () => {
   return (
-    <View className="flex-between flex-row w-full mb-6">
+    <View className="flex-between flex-row w-full mb-2">
       <View className="flex-start">
         <Text className="small-bold text-primary">DELIVERY LOCATION</Text>
         <TouchableOpacity className="flex-center flex-row gap-x-1">

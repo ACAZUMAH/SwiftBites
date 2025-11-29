@@ -12,7 +12,11 @@ export const Profile: React.FC = () => {
   return (
     <SafeAreaView className="flex-1 px-4">
       <ScrollView showsVerticalScrollIndicator={false}>
-        <CustomHeader title="Profile" onNavigateBack={navigateBack} />
+        <CustomHeader
+          style="mb-8"
+          title="Profile"
+          onNavigateBack={navigateBack}
+        />
 
         <View className="flex-center">
           <Image source={images.avatar} className="profile-avatar" />

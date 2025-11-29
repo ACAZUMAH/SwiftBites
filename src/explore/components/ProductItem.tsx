@@ -10,9 +10,10 @@ import { MenuItem } from "src/interface";
 
 interface ProductItemProps {
   item: MenuItem;
+  onPress: () => void;
 }
 
-export const ProductItem: React.FC<ProductItemProps> = ({ item }) => {
+export const ProductItem: React.FC<ProductItemProps> = ({ item, onPress }) => {
   const addToCart = useAddToCart();
   const itemExist = useCartItemAlreadyExist(item);
   const increaseQuantity = useIncreaseQuantity();
@@ -47,6 +48,7 @@ export const ProductItem: React.FC<ProductItemProps> = ({ item }) => {
           ? { elevation: 10, shadowColor: "#878787" }
           : {}
       }
+      onPress={onPress}
     >
       <Image
         source={{ uri: item.image_url }}

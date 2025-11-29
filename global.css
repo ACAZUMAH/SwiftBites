@@ -46,7 +46,7 @@
   }
 
   .custom-header {
-    @apply w-full flex flex-row items-center justify-between mb-10;
+    @apply w-full flex flex-row items-center justify-between;
   }
 
   .label {
@@ -62,7 +62,7 @@
   }
 
   .menu-card {
-    @apply relative py-9 px-3.5 pt-24 flex items-center justify-end bg-white shadow-md shadow-black/10 rounded-3xl;
+    @apply relative py-9 px-3.5 pt-24 flex items-center justify-end bg-white shadow-sm shadow-black/10 rounded-3xl;
   }
 
   .profile-field {
@@ -74,7 +74,7 @@
   }
 
   .searchbar {
-    @apply relative flex flex-row items-center justify-center w-full bg-white shadow-md shadow-black/10 rounded-full  font-quicksand-medium text-dark-100 gap-5;
+    @apply relative flex flex-row items-center justify-center w-full bg-white shadow-sm shadow-black/10 rounded-full font-quicksand-medium text-dark-100 gap-5;
   }
 
   .tab-icon {
@@ -99,6 +99,10 @@
 
   .h1-bold {
     @apply text-4xl font-quicksand-bold;
+  }
+
+  .h2-bold {
+    @apply text-2xl font-quicksand-bold !important;
   }
 
   .h3-bold {

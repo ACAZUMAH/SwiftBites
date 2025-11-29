@@ -1,9 +1,9 @@
 import cn from "clsx";
 import React from "react";
 import { FlatList, View } from "react-native";
+import { appRoutes } from "src/constants";
+import { useAppNavigation } from "src/hook/useAppNavigation";
 import { MenuItem } from "src/interface";
-import { ExploreHeader } from "./ExploreHeader";
-import Filters from "./Filters";
 import { ProductItem } from "./ProductItem";
 
 interface ProductListProps {
@@ -11,6 +11,7 @@ interface ProductListProps {
 }
 
 export const ProductList: React.FC<ProductListProps> = ({ menus }) => {
+  const { navigate } = useAppNavigation();
   return (
     <FlatList
       data={menus}
@@ -24,21 +25,17 @@ export const ProductList: React.FC<ProductListProps> = ({ menus }) => {
             )}
             key={item.id}
           >
-            <ProductItem item={item} />
+            <ProductItem
+              item={item}
+              onPress={() => navigate(appRoutes.product, { item })}
+            />
           </View>
         );
       }}
-      ListHeaderComponent={() => (
-        <>
-          <ExploreHeader />
-
-          <Filters />
-        </>
-      )}
       keyExtractor={(item) => item.id.toString()}
       numColumns={2}
       columnWrapperClassName="gap-7"
-      contentContainerClassName="gap-7 px-1 pb-32 mt-5"
+      contentContainerClassName="gap-7 px-1 pb-32 mt-10"
       showsVerticalScrollIndicator={false}
     />
   );

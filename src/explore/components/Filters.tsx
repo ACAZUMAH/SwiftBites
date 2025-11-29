@@ -16,7 +16,7 @@ const Filters = () => {
     <ScrollView
       horizontal
       showsHorizontalScrollIndicator={false}
-      contentContainerClassName="gap-x-2 pb-3 pt-4"
+      contentContainerClassName="gap-x-2 pb-3 pt-3"
     >
       {CATEGORIES.map((category) => (
         <FilterItem

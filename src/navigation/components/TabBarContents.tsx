@@ -8,8 +8,8 @@ export const TabBarContents = () => {
   const { navigateToTab } = useAppNavigationWithRef();
   return (
     <View
-      className="absolute rounded-full bg-white left-3 right-3 bottom-9 h-24 
-       overflow-hidden"
+      className="absolute rounded-full bg-white-100 left-3 right-3 bottom-9 h-24 
+       overflow-hidden shadow-lg shadow-dark-100/20"
       style={{
         shadowColor: "#1a1a1a",
         shadowOffset: {

@@ -1,11 +1,13 @@
 import React from "react";
 import { Image, Text, TouchableOpacity, View } from "react-native";
 import { Conditional } from "src/components/conditional";
-import { icons } from "src/constants";
+import { appRoutes, icons } from "src/constants";
+import { useAppNavigationWithRef } from "src/hook/useAppNavigationWithRef";
 import { useCartItemsTotalCount } from "src/hook/useCartActions";
 
-export const HomeHeader = () => {
+export const HomeHeader: React.FC = () => {
   const count = useCartItemsTotalCount();
+  const { navigateToTab } = useAppNavigationWithRef();
   return (
     <View className="flex-between flex-row w-full my-2">
       <View className="flex-start">
@@ -20,7 +22,10 @@ export const HomeHeader = () => {
         </TouchableOpacity>
       </View>
 
-      <TouchableOpacity className="cart-btn">
+      <TouchableOpacity
+        className="cart-btn"
+        onPress={() => navigateToTab(appRoutes.CART)}
+      >
         <Image source={icons.bag} className="size-5" resizeMode="contain" />
 
         <Conditional condition={count > 0}>

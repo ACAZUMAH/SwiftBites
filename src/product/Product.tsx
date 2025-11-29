@@ -1,9 +1,11 @@
 import { useRoute } from "@react-navigation/native";
 import React, { useMemo } from "react";
 import { Image, ScrollView, Text, View } from "react-native";
+import { SafeAreaView } from "react-native-safe-area-context";
 import { CustomHeader } from "src/components/CustomHeader";
 import { icons, sides, toppings } from "src/constants";
 import { useAppNavigation } from "src/hook/useAppNavigation";
+import { CartButton } from "./components/CartButton";
 import { Sides } from "./components/Sides";
 import { Toppings } from "./components/Toppings";
 
@@ -15,13 +17,17 @@ export const Product: React.FC = () => {
   const product = useMemo(() => params?.item, [params]);
 
   return (
-    <View className="bg-white">
-      <View className="px-4 mt-10">
-        <CustomHeader style="mb-5" onNavigateBack={() => navigateBack()} />
+    <SafeAreaView className="flex-1 bg-white">
+      <View className="px-4">
+        <CustomHeader
+          style="mb-4"
+          title="Product"
+          onNavigateBack={() => navigateBack()}
+        />
       </View>
       <ScrollView
         showsVerticalScrollIndicator={false}
-        // contentContainerClassName="bg-white"
+        contentContainerClassName="bg-white"
       >
         <View className="flex-between flex-row gap-1">
           <View className="flex-start pl-4">
@@ -90,7 +96,9 @@ export const Product: React.FC = () => {
         <Toppings toppings={toppings} />
 
         <Sides sides={sides} />
+
+        <CartButton product={product} />
       </ScrollView>
-    </View>
+    </SafeAreaView>
   );
 };

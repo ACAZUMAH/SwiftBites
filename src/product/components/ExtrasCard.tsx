@@ -15,7 +15,7 @@ interface ExtrasCardProps {
 export const ExtrasCard: React.FC<ExtrasCardProps> = ({ name, image }) => {
   return (
     <View className="bg-neutral-900 rounded-2xl shadow-sm shadow-black/10 h-40">
-      <View className="relative bg-white rounded-2xl flex-center shadow-sm shadow-black/10 h-[60%]">
+      <View className="relative bg-white-100 rounded-2xl flex-center shadow-sm shadow-black/10 h-[60%]">
         <Image source={image} className="size-20" resizeMode="contain" />
       </View>
       <View className="flex-between flex-row py-4 px-3 gap-5">

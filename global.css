@@ -30,7 +30,7 @@
   }
 
   .cart-item {
-    @apply flex flex-row items-end justify-between mb-6 bg-white rounded-xl p-3 shadow-md shadow-dark-100/10;
+    @apply flex flex-row items-end justify-between mb-6 bg-white rounded-xl p-3 shadow-sm shadow-dark-100/10;
   }
 
   .cart-item__image {

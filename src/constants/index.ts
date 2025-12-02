@@ -5,6 +5,8 @@ export const appRoutes = {
   CART: "cart",
   PROFILE: "profile",
   product: "product",
+  signIn: "signIn",
+  signUp: "signUp",
 };
 
 //images
@@ -51,6 +53,8 @@ import salad from "../../assets/images/salad.png";
 import success from "../../assets/images/success.png";
 // @ts-ignore
 import tomatoes from "../../assets/images/tomatoes.png";
+// @ts-ignore
+import logo2 from "../../assets/images/logo2.png";
 
 //icons
 
@@ -140,6 +144,7 @@ export const images = {
   salad,
   success,
   tomatoes,
+  logo2,
 };
 
 export const offers = [
